@@ -117,6 +117,7 @@ const cfg = (() => {
       "@semantic-release/git",
       {
         assets: ["package.json", "docs/MAIN_CHANGELOG.md"],
+        message: "chore(release): main publish [no ci]",
       },
     ]);
 

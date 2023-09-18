@@ -7,7 +7,7 @@
       "allowBranch": "master",
       "conventionalCommits": true,
       "changelogPreset": "conventional-changelog-conventionalcommits",
-      "message": "chore(release): publish %s"
+      "message": "chore(release): packages publish [no ci]"
     }
   }
 }
