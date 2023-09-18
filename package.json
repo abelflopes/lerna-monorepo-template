@@ -20,7 +20,7 @@
   },
   "author": "Abel Lopes (@abelflopes)",
   "workspaces": [
-    "src/*"
+    "packages/*"
   ],
   "devDependencies": {
     "@commitlint/cli": "^17.6.6",
