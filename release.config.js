@@ -116,7 +116,7 @@ const cfg = (() => {
     plugins.push([
       "@semantic-release/git",
       {
-        assets: ["package.json", "docs/_MAIN_CHANGELOG.md"],
+        assets: ["package.json", "docs/MAIN_CHANGELOG.md"],
       },
     ]);
 
