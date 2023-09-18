@@ -121,6 +121,7 @@ const cfg = (() => {
     ]);
 
   return {
+    tagFormat: "project-${version}",
     ci: options.isCI,
     dryRun: options.isDryRun,
     branches: [
