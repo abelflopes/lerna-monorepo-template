@@ -3,6 +3,11 @@
   "private": false,
   "version": "1.0.0",
   "description": "Monorepo PoC/Template with independent versioning for the whole project and its packages",
+  "homepage": "https://github.com/abelflopes/lerna-monorepo-template#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abelflopes/lerna-monorepo-template.git"
+  },
   "scripts": {
     "prepare": "husky install",
     "build": "lerna run build",
