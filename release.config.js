@@ -9,11 +9,11 @@ const options = {
    * - package publish (along with {@link ConfigOptions.npmPublish})
    * - tag creation
    * - pushing to remote (along with {@link ConfigOptions.push})  */
-  isDryRun: true,
+  isDryRun: false,
   /** If set tot true will publish package to registry */
   npmPublish: false,
   /** if set to true, will push version & changelog changes to remote */
-  push: false,
+  push: true,
 };
 
 const cfg = (() => {
