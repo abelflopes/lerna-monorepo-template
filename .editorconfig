@@ -1,0 +1,9 @@
+# https://editorconfig.org/
+# Reminder: keep synced with linter & gitattributes configs
+#           as well as ensuring cross OS consistency
+
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true

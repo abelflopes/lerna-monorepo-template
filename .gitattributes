@@ -1,0 +1,10 @@
+# https://git-scm.com/docs/gitattributes
+# Reminder: keep synced with linter & editor configs
+#           as well as ensuring cross OS consistency
+
+*.ts* text eol=lf
+*.js* text eol=lf
+*.*css text eol=lf
+*.*md text eol=lf
+*.*yml text eol=lf
+*.*json text eol=lf
