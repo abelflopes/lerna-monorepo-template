@@ -22,8 +22,10 @@ This project showcases a monorepo template with independent versioning capabilit
 | Command name | Description |
 | -- | -- |
 | `npm run prepare` | Runs the project development preparation scripts (runs automatically after npm install). |
+| `npm start` | compiles into dist in watch mode |
 | `npm run build` | Runs the build command for all packages |
 | `npm run test` | Runs the test command for all packages |
+| `npm run lint` | Run static code analysis |
 | `npm run clean` | Clean production output for all packages |
 | `npm run todo` | List all TODO's and FIXME's |
 
