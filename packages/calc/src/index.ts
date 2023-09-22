@@ -10,7 +10,7 @@ type Operator = "sum" | "sub" | "multi" | "div";
  * @returns result of the provided operation / values
  */
 
-export const calc = (operator: Operator, n1: number, n2: number) =>
+export const calc = (operator: Operator, n1: number, n2: number): number =>
   operator === "sum"
     ? sum(n1, n2)
     : ((): number => {
