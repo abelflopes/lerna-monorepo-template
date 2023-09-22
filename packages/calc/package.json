@@ -10,8 +10,8 @@
     "url": "git+https://github.com/abelflopes/lerna-monorepo-template.git"
   },
   "scripts": {
-    "start": "tsc --watch",
-    "build": "tsc --build",
+    "start": "tsc -p tsconfig.build.json -w",
+    "build": "tsc -p tsconfig.build.json",
     "clean": "rm -rf dist",
     "test": "jest",
     "lint": "eslint . --ext ts,tsx"
