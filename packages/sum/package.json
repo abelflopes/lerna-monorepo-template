@@ -10,15 +10,18 @@
     "url": "git+https://github.com/abelflopes/lerna-monorepo-template.git"
   },
   "scripts": {
-    "start": "tsc --watch",
-    "build": "tsc --build",
+    "start": "tsc --watch -p tsconfig.build.json",
+    "build": "tsc --build -p tsconfig.build.json",
     "clean": "rm -rf dist",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint . --ext ts,tsx"
   },
   "devDependencies": {
+    "@abelflopes/eslint-config-tsr-pro": "^1.0.1",
     "@babel/preset-env": "^7.22.7",
     "@babel/preset-typescript": "^7.22.5",
     "@types/jest": "^29.5.2",
+    "eslint": "^8.49.0",
     "jest": "^29.6.1",
     "typescript": "^5.1.6"
   }
