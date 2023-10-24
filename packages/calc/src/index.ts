@@ -4,9 +4,9 @@ type Operator = "sum" | "sub" | "multi" | "div";
 
 /**
  * Perform math operations
- * @param operator describes operation to perform {@link Operator}
- * @param n1 numeric value
- * @param n2 numeric value
+ * @param operator - describes operation to perform {@link Operator}
+ * @param n1 - numeric value
+ * @param n2 - numeric value
  * @returns result of the provided operation / values
  */
 
