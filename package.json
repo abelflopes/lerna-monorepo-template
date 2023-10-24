@@ -13,7 +13,7 @@
     "start": "lerna run start --parallel --stream",
     "build": "lerna run build",
     "test": "lerna run test --parallel",
-    "lint": "lerna run lint --parallel",
+    "lint": "eslint . --ext ts,tsx",
     "clean": "lerna run clean",
     "todo": "npx leasot '**/**' '.**/**' -i '**/node_modules/**' -S -x",
     "publish": "lerna publish --yes",
@@ -24,8 +24,10 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@abelflopes/eslint-config-tsr-pro": "^1.1.0",
     "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^18.0.0",
+    "eslint": "^8.52.0",
     "husky": "^8.0.3",
     "lerna": "^7.1.1",
     "semantic-release": "^22.0.5",
