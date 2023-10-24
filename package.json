@@ -17,8 +17,7 @@
     "format": "prettier . --check --cache --ignore-unknown",
     "clean": "lerna run clean",
     "todo": "npx leasot '**/**' '.**/**' -i '**/node_modules/**' -S -x",
-    "publish": "lerna publish --yes",
-    "publish2": "semantic-release"
+    "publish": "lerna publish --yes && semantic-release"
   },
   "author": "Abel Lopes (@abelflopes)",
   "workspaces": [
