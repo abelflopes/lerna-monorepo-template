@@ -14,6 +14,7 @@
     "build": "lerna run build",
     "test": "lerna run test --parallel",
     "lint": "eslint . --ext ts,tsx",
+    "format": "prettier . --check --cache --ignore-unknown",
     "clean": "lerna run clean",
     "todo": "npx leasot '**/**' '.**/**' -i '**/node_modules/**' -S -x",
     "publish": "lerna publish --yes",
@@ -25,11 +26,13 @@
   ],
   "devDependencies": {
     "@abelflopes/eslint-config-tsr-pro": "^1.1.0",
+    "@abelflopes/prettier-config-pro": "^1.0.0",
     "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^18.0.0",
     "eslint": "^8.52.0",
     "husky": "^8.0.3",
     "lerna": "^7.1.1",
+    "prettier": "^3.0.3",
     "semantic-release": "^22.0.5",
     "semantic-release-config-conventional": "^1.0.1"
   }
