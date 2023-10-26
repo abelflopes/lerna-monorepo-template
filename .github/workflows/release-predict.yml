@@ -36,7 +36,7 @@ jobs:
       # delete GITHUB process.env vars so that semantic release does not prevent
       # PR branches from failing validation
       # executes semantic release dry run in the same process
-      - name: "Predict Next Version"
+      - name: Predict Next Version - Project
         uses: actions/github-script@v6
         with:
           script: |
@@ -52,3 +52,6 @@ jobs:
               "npm exec -- semantic-release --dry-run",
               { stdio: "inherit" }
             );
+
+      - name: Predict Next Version - Packages
+        run: npm exec -- lerna version --no-git-tag-version --no-push
