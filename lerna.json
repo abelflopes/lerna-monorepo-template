@@ -4,7 +4,6 @@
   "tagVersionPrefix": "package-",
   "command": {
     "version": {
-      "allowBranch": "master",
       "conventionalCommits": true,
       "changelogPreset": "conventional-changelog-conventionalcommits",
       "message": "chore(release): packages publish [no ci]"
