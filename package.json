@@ -29,7 +29,7 @@
     "@commitlint/config-conventional": "^18.0.0",
     "eslint": "^8.52.0",
     "husky": "^8.0.3",
-    "lerna": "^7.1.1",
+    "lerna": "^7.4.2",
     "prettier": "^3.0.3",
     "semantic-release": "^22.0.5",
     "semantic-release-config-conventional": "^1.0.1"

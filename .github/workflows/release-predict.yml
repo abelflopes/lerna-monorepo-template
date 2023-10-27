@@ -18,7 +18,7 @@ jobs:
       id-token: write # to enable use of OIDC for npm provenance
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkouxt@v3
         with:
           fetch-depth: 0
           # pull the actual branch instea of pulling the PR virtual branch so that
@@ -54,4 +54,4 @@ jobs:
             );
 
       - name: Predict Next Version - Packages
-        run: npm exec -- lerna version --no-git-tag-version --no-push
+        run: npm exec -- lerna version --no-git-tag-version --no-push --yes
