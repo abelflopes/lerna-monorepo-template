@@ -16,8 +16,7 @@
     "lint": "eslint . --ext ts,tsx",
     "format": "prettier . --check --cache --ignore-unknown",
     "clean": "lerna run clean",
-    "todo": "npx leasot '**/**' '.**/**' -i '**/node_modules/**' -S -x",
-    "publish": "lerna publish --yes && semantic-release"
+    "todo": "npx leasot '**/**' '.**/**' -i '**/node_modules/**' -S -x"
   },
   "author": "Abel Lopes (@abelflopes)",
   "workspaces": [
