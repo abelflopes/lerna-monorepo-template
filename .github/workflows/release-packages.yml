@@ -1,7 +1,5 @@
 name: Release Packages
 on:
-  push: # TODO: enable when code is ready to be released
-    branches: ["master"]
   workflow_dispatch:
 
 jobs:
