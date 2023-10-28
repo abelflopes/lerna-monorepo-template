@@ -1,7 +1,7 @@
 {
   "name": "@abelflopes/lerna-monorepo-template-calc",
   "private": false,
-  "version": "1.0.2",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "homepage": "https://github.com/abelflopes/lerna-monorepo-template#readme",
@@ -16,7 +16,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@abelflopes/lerna-monorepo-template-sum": "^1.0.2"
+    "@abelflopes/lerna-monorepo-template-sum": "^1.0.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.22.7",
