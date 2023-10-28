@@ -49,6 +49,6 @@ jobs:
 
       - name: Release - Project
         env:
-          GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
+          GH_TOKEN: ${{ secrets.GIT_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npm exec semantic-release
