@@ -6,6 +6,10 @@ on:
     types: [completed]
   workflow_dispatch:
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   release-project:
     name: Release Project

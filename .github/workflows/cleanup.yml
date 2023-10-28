@@ -24,7 +24,7 @@ on:
 permissions: write-all
 
 concurrency:
-  group: ci-cleanup
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
