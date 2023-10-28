@@ -55,8 +55,8 @@ jobs:
       # required for lerna
       - name: Set git user
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git config --global user.name 'lerna'
+          git config --global user.email '-'
 
       - name: Show git user
         run: git config --list
