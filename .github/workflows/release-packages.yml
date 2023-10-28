@@ -47,7 +47,7 @@ jobs:
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
           echo "@abelflopes:registry=https://npm.pkg.github.com" >> .npmrc
           echo "access=public" >> .npmrc
-        
+
       # required for lerna
       - name: Set git user
         run: |
