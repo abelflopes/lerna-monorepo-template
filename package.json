@@ -13,7 +13,7 @@
     "start": "lerna run start --parallel --stream",
     "build": "lerna run build",
     "test": "lerna run test --parallel",
-    "lint": "eslint . --ext ts,tsx",
+    "lint": "eslint . --ext ts --cache",
     "format": "prettier . --check --cache --ignore-unknown",
     "clean": "lerna run clean",
     "todo": "npx leasot '**/**' '.**/**' -i '**/node_modules/**' -S -x"
