@@ -1,0 +1,10 @@
+@import "react-ck";
+@import "../../styles//mixins";
+
+@include app-styles {
+  .footer {
+    display: flex;
+    gap: get-spacing(1);
+    align-items: center;
+  }
+}
