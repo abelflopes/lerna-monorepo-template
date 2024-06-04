@@ -16,7 +16,7 @@
     "lint": "eslint . --ext ts --cache",
     "format": "prettier . --check --cache --ignore-unknown",
     "clean": "lerna run clean",
-    "todo": "npx leasot '**/**' '.**/**' -i '**/node_modules/**' -S -x"
+    "audit": "sh ./scripts/audit.sh && lerna exec --stream --concurrency 1 -- sh ../../scripts/audit.sh"
   },
   "author": "Abel Lopes (@abelflopes)",
   "workspaces": [

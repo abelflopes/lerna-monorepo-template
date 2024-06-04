@@ -28,7 +28,7 @@ This project showcases a monorepo template with independent versioning capabilit
 | `npm run format` | checks for formatting issues, add ` -- --write` to fix formatting automatically |
 | `npm run lint` | checks for code issues, add ` -- --fix` to fix issues automatically |
 | `npm run clean` | Clean production output for all packages |
-| `npm run todo` | List all TODO's and FIXME's |
+| `npm run audit` | Get dependency info, unused stuff, list all TODO's and FIXME's |
 
 ## Package Standards & Guidelines
 
