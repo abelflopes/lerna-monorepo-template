@@ -1,7 +1,7 @@
 {
   "name": "@abelflopes/lerna-monorepo-template",
-  "private": false,
-  "version": "1.0.0",
+  "private": true,
+  "version": "0.0.0",
   "description": "Monorepo PoC/Template with independent versioning for the whole project and its packages",
   "homepage": "https://github.com/abelflopes/lerna-monorepo-template#readme",
   "repository": {

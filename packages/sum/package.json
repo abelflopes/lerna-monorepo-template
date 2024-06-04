@@ -1,7 +1,7 @@
 {
   "name": "@abelflopes/lerna-monorepo-template-sum",
-  "private": false,
-  "version": "1.0.0",
+  "private": "true",
+  "version": "0.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "homepage": "https://github.com/abelflopes/lerna-monorepo-template/src/sum#readme",
