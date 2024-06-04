@@ -1,6 +1,3 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
 # Husky https://typicode.github.io/husky/#/
 # Git hooks https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
 

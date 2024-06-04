@@ -4,3 +4,7 @@ dist
 
 # cache
 .eslintcache
+.nx
+
+# log
+**/*.log
