@@ -26,10 +26,19 @@ This project showcases a monorepo template with independent versioning capabilit
 | `npm start` | compiles into dist in watch mode |
 | `npm run build` | Runs the build command for all packages |
 | `npm run test` | Runs the test command for all packages |
-| `npm run format` | checks for formatting issues, add ` -- --write` to fix formatting automatically |
-| `npm run lint` | checks for code issues, add ` -- --fix` to fix issues automatically |
+| `npm run format` | Run formatting checks at project root |
+| `npm run lint` | Runs all lint commands below |
+| `npm run lint:format` | Checks for formatting issues |
+| `npm run lint:format:fix` | Fix formatting automatically |
+| `npm run lint:code` | Checks for code issues,  |
+| `npm run lint:code:fix` | Fix code lint issues automatically |
+| `npm run lint:typescript` | Checks for typescript issues |
+| `npm run lint:style` | Checks for CSS issues |
 | `npm run clean` | Clean production output for all packages |
 | `npm run audit` | Get dependency info, unused stuff, list all TODO's and FIXME's |
+| `npm run clean` | Cleans outputs from generated files such as `dist` |
+| `npm run clean:cache` | Cleans cache files |
+| `npm run clean:deps` | Cleans dependencies | 
 
 ## Package Standards & Guidelines
 
