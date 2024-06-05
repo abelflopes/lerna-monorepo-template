@@ -10,7 +10,8 @@ This project showcases a monorepo template with independent versioning capabilit
 
 ## What is used?
 
-- [Lerna](https://github.com/lerna/lerna)
+- [Lerna / NX](https://lerna.js.org/)
+- [NPM Workspaces](https://docs.npmjs.com/cli/v10/using-npm/workspaces)
 - [Semantic Release](https://github.com/conventional-changelog/commitlint)
 - [Commitlint](https://github.com/conventional-changelog/commitlint)
 - [Github Actions](https://docs.github.com/en/actions)
