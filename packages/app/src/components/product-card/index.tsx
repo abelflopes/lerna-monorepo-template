@@ -24,7 +24,7 @@ export const ProductCard = ({ id }: Readonly<ProductCardProps>): React.ReactElem
           <PriceTag className={styles.price} value={product.price} />
 
           <Text
-            variation={["bold", "link"]}
+            skin={["bold", "link"]}
             as={
               <Link
                 className={styles.link}

@@ -13,24 +13,32 @@
     "start": "lerna run start --parallel --stream",
     "build": "lerna run build",
     "test": "lerna run test --parallel",
-    "lint": "eslint . --ext ts --cache",
     "format": "prettier . --check --cache --ignore-unknown",
-    "clean": "lerna run clean",
-    "audit": "sh ./scripts/audit.sh && lerna exec --stream --concurrency 1 -- sh ../../scripts/audit.sh"
+    "audit": "sh ./scripts/audit.sh && lerna exec --stream --concurrency 1 -- sh ../../scripts/audit.sh",
+    "lint": "npx npm-run-all --sequential lint:*",
+    "lint:code": "lerna run lint:code --stream",
+    "lint:code:fix": "lerna run lint:code --parallel --stream -- --fix",
+    "lint:typescript": "lerna run lint:typescript",
+    "lint:format": "lerna run lint:format",
+    "lint:format:fix": "lerna run lint:format -- --write",
+    "lint:style": "lerna run lint:style",
+    "clean": "lerna exec -- rm -rf dist specs/coverage",
+    "clean:cache": "rm -rf *.log .eslintcache ./.nx node_modules/.cache  && lerna exec -- rm -rf .eslintcache cache",
+    "clean:deps": "lerna exec -- rm -rf node_modules && rm -rf node_modules"
   },
   "author": "Abel Lopes (@abelflopes)",
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
-    "@abelflopes/eslint-config-tsr-pro": "^2.0.0",
+    "@abelflopes/eslint-config-tsr-pro": "^2.0.1",
     "@abelflopes/prettier-config-pro": "^1.0.0",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
-    "eslint": "^8.52.0",
+    "eslint": "^8.57.0",
     "husky": "^9.0.11",
     "lerna": "^8.1.3",
-    "prettier": "^3.0.3",
+    "prettier": "^3.3.0",
     "semantic-release": "^22.0.5",
     "semantic-release-config-conventional": "^1.0.1"
   }

@@ -12,14 +12,21 @@
   "scripts": {
     "start": "tsc -p tsconfig.build.json -w --preserveWatchOutput",
     "build": "tsc -p tsconfig.build.json",
+    "test": "jest",
     "clean": "rm -rf dist",
-    "test": "jest"
+    "lint:code": "eslint . --ext ts --cache",
+    "lint:typescript": "tsc -p tsconfig.build.json --noEmit",
+    "lint:format": "prettier . --check --cache --ignore-unknown"
   },
   "devDependencies": {
+    "@abelflopes/eslint-config-tsr-pro": "^2.0.1",
+    "@abelflopes/prettier-config-pro": "^1.0.0",
     "@babel/preset-env": "^7.22.7",
     "@babel/preset-typescript": "^7.22.5",
     "@types/jest": "^29.5.2",
+    "eslint": "^8.57.0",
     "jest": "^29.6.1",
+    "prettier": "^3.3.0",
     "typescript": "^5.1.6"
   }
 }

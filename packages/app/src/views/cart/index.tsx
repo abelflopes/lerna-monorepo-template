@@ -27,7 +27,7 @@ export const CartView = (): React.ReactElement => {
 
       {cart.products.length > 0 && (
         <>
-          <Text type="h1">Cart</Text>
+          <Text variation="h1">Cart</Text>
 
           <DataTable
             skin="bordered"
@@ -46,7 +46,7 @@ export const CartView = (): React.ReactElement => {
             autoHeaders
           />
 
-          <Text type="h3">Total: € {cart.total}</Text>
+          <Text variation="h3">Total: € {cart.total}</Text>
 
           <Button
             onClick={(): void => {

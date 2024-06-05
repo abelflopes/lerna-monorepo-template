@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Store } from "@store/index";
 import { Alert, useSnackbarContext } from "react-ck";
 

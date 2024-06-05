@@ -6,6 +6,6 @@ import { Text } from "react-ck";
 
 export const Error404View = (): React.ReactElement => (
   <ErrorLayout title="Something went wrong" description="The requested page was not found">
-    <Text variation="link" as={<NavLink to={routesList.home}>Go to initial page</NavLink>} />
+    <Text skin="link" as={<NavLink to={routesList.home}>Go to initial page</NavLink>} />
   </ErrorLayout>
 );
