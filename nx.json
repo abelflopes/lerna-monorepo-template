@@ -4,6 +4,18 @@
     "build": {
       "cache": true,
       "dependsOn": ["^build"]
+    },
+    "test": {
+      "cache": true
+    },
+    "lint:code": {
+      "cache": true
+    },
+    "lint:format": {
+      "cache": true
+    },
+    "lint:typescript": {
+      "cache": true
     }
   }
 }
